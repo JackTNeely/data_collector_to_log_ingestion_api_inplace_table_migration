@@ -1,4 +1,4 @@
-using './inplace_migration_base_template.bicep'
+using './dcr_and_monitoring_metrics_publisher_template.bicep'
 
 param tableName = 'Your Table Name' // Your custom table name before _CL. This is used to configure the stream name but this behavior can be changed in the bicep file.
 
