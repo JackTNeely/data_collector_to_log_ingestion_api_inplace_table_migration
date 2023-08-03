@@ -1,7 +1,7 @@
 param tableName string // Assigned in .bicepparam
 param columns array // Assigned in .bicepparam
 
-param dcrPrefix string // Your custom prefix for the DCR name.
+param dcrPrefix string = 'DCR' // Your custom prefix for the DCR name.
 param dcrName string = '${dcrPrefix}${tableName}'
 
 param kqlTransformation string = 'source | extend TimeGenerated = now()' // Or your own ingestion transformation KQL query.
