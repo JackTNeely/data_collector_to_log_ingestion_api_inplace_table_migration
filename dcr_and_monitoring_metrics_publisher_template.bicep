@@ -30,7 +30,7 @@ resource dataCollectionRule 'Microsoft.Insights/dataCollectionRules@2022-06-01' 
     dataCollectionEndpointId: dataCollectionEndpointId
     streamDeclarations: {
       '${stream}': {
-        columns: [for column in columns: {
+        columns: [for column in columns: { // Iterates over each column in the columns array from .bicepparam
           name: column
           type: defaultColumnType
         }]
